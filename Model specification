@@ -1,0 +1,9 @@
+An LLM can be represented by a model which has two components, an interface, and a computing function
+Both components are separate yet interoperable
+The computing function performs the core tasks performed by the model (e.g. generating a software code)
+The interface part interprets human language queries to the computing function (e.g. providing user requirements for a software code)
+The interface part translates the output of the computing function into an easily understandable format.
+The purpose of the whole system is to align the request at its input with the response at its output
+Hallucination occurs when the output of the computing function is inaccurate yet the interface part translation of this output still makes sense
+An output response of the system due to a prompt provided at its input is generated through an interaction between both the interface and computing function components
+Fine tuning of the system using small datasets creates a new model which includes its own interface and computing function components
